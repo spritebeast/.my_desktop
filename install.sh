@@ -31,7 +31,7 @@ echo ">>> install graphics drivers"
 sudo apt install -y firmware-linux firmware-intel-graphics intel-media-va-driver-non-free
 
 echo ">>> install codecs"
-sudo apt install -y ffmpeg libavcodec-extra libdvdread4 libdvdcss2
+sudo apt install -y ffmpeg libavcodec-extra
 
 echo ">>> install node.js + npm"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
@@ -62,7 +62,7 @@ echo ">>> install terminal"
 sudo apt install -y alacritty zsh
 
 echo ">>> copy alacritty .config"
-cp -r /.config/alacritty ~/.config/alacritty
+cp -r .config/alacritty ~/.config/alacritty
 
 echo ">>> install catppuccin theme"
 git clone https://github.com/orangci/walls-catppuccin-mocha catppuccin-wallpapers
@@ -77,7 +77,7 @@ sudo apt install -y flatpak plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo ">>> install flathub programs"
-sudo flatpak install -y flathub com.google.Chrome com.spotify.Client com.discordapp.Discord com.jetbrains.PyCharm-Professional com.prusa3d.PrusaSlicer io.mrarm.mcpelauncher com.mojang.Minecraft
+sudo flatpak install -y flathub com.spotify.Client com.discordapp.Discord com.jetbrains.PyCharm-Professional com.prusa3d.PrusaSlicer io.mrarm.mcpelauncher com.mojang.Minecraft
 
 echo ">>> cleaning"
 sudo apt autoremove -y
