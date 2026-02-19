@@ -70,6 +70,7 @@ git clone https://github.com/catppuccin/alacritty catppuccin-alacritty-themes
 git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde-theme
 
 echo ">>> install jetbrains fonts"
+mkdir -p ~/local/share/fonts
 cp -r .fonts/ ~/.local/share/fonts/jetbrains/
 
 echo ">>> install flatpak & flathub repo"
